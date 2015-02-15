@@ -1,0 +1,36 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+
+
+    -->
+    <style name="AppTheme.Base" parent="Theme.AppCompat">
+        <item name="windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+
+        <!-- Actionbar color -->
+        <item name="colorPrimary">@color/my_green</item>
+        <!-- Status bar color -->
+        <item name="colorPrimaryDark">#88D81B60</item>
+        <!-- Window color -->
+        <item name="android:windowBackground">@color/my_green</item>
+        <item name="drawerArrowStyle">@style/AppTheme.MyDrawerArrowStyle</item>
+    </style>
+
+    <!-- 加入一個新的 navigation drarwer 的風格 -->
+    <style name="AppTheme.MyDrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+
+        <!-- 將 spinBars 屬性設定為 false -->
+        <item name="spinBars">false</item>
+        <!-- 設定 drawer arrow 的顏色 -->
+        <item name="color">@android:color/black</item>
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppTheme.Base">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+</resources>
